@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+
+
+        // Write a JavaScript function that takes an array of numbers as input and returns the sum of all the positive numbers in the array.
+        // For example, if the input array is[2, -4, 6, -8, 10], the function should return 18(the sum of the positive numbers: 2 + 6 + 10).
+
+
+        // let ar=[2,3,-4,5,6,7,8,9,-4,-6];
+        // sopn=()=>{
+        //     let pos=ar.filter((x)=>x>0);
+        //     console.log(pos);
+        //     console.log( pos.reduce((x,y)=>x+y));
+        // }
+        // sopn();
+
+
+
+
+
+        //sum of all even number
+
+        // let arr = [1, 2, 3, 4, 5, 6, 7, 8, 9, 0];
+        // soen = () => {
+        //     let evn = arr.filter((x) => x % 2 == 0)
+        //     console.log(evn);
+        //     let sum = evn.reduce((a, b) => a + b, 0);
+        //     console.log(sum);
+        // }
+        // soen();
+
+
+        output = (sentence) => {
+            console.log(sentence);
+            let count = {}
+            let words = sentence.split(" ")
+            console.log(words);
+            if (words){
+                words.map((word) => {
+                    count[word]=(count[word] || 0)+1;
+                })};
+            console.log(count);
+
+        }
+
+         output("hey i love js js is a programing language");
+
+
+        // let abc=['a', 'b', 'c'].reduce((a, v,c) => ({ ...a, [v]: c}), {}) 
+        // console.log(abc);
+
+
+
+
+
+
+    </script>
+</body>
+
+</html>

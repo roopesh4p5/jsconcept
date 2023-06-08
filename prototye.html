@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        // let person1={
+        //     name: "roovi",
+        //     gender: "male",
+        // }
+        // console.log(person1)
+
+
+        // let arr=[2,3,4,5,"hello","world"]
+        // console.log(arr)
+
+        //         let animal = {
+        //             eats: true,
+        //             walk() {
+        //                 alert("Animal walk");
+        //             }
+        //         };
+
+        //         let rabbit = {
+        //             jumps: true,
+        //             __proto__: animal
+        //         };
+
+        //         // walk is taken from the prototype
+        //         console.log(rabbit.eats);
+        // // Animal walk
+        // rabbit.walk();
+
+
+        // let arr=["roovi",20]
+        // console.log(arr)
+        // let [name,age]=arr
+        // alert(name)
+        // Object.assign(b={name,age});
+        // console.log(b)
+
+
+        // animal has methods
+        // let animal = {
+        //   walk() {
+        //     if (!this.isSleeping) {
+        //       alert(`I walk`);
+        //     }
+        //   },
+        //   sleep() {
+        //     return this.isSleeping = true;
+        //   }
+        // };
+
+        // let rabbit = {
+        //   name: "White Rabbit",
+        //   __proto__: animal
+        // };
+
+        // // modifies rabbit.isSleeping
+        // rabbit.sleep();
+
+        // alert(rabbit.isSleeping); // true
+        // alert(animal.walk()); 
+
+        // let person=["roovi",20]
+        // console.log(person);
+
+        // let p=Object.assign(person)
+        // console.log(p);
+
+
+
+        let p=40;
+        console.log(p)
+        let x=11;
+        let a = () => {
+            let z = 10;
+            let b = () => {
+                let y = 20
+                console.log(z);
+                console.log(y);
+                let c = () => {
+                    console.log(z)
+                    console.log(y)
+                    console.log(x)
+                }
+                c();
+            }
+            b();
+        }
+        a();
+        // console.log(y);
+       
+
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+
+const mypromise =new Promise((resolve,reject)=>{
+    setTimeout(()=>{
+        let a=10;
+        let b=20;
+        let add=a+b;
+        if(true){
+            resolve(add)
+        }else{
+            reject("error occured")
+        }
+    },1000)
+})
+
+mypromise.then((result)=>{sub=result;console.log(result)})
+.then((sub)=>{
+    let c=20;
+    let sub=c-sub;
+    if(true){
+        resolve(sub)
+    }else{
+        reject("error occured 2")
+    }
+})
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+//         const delay = (ms) => new Promise((resolve) => setTimeout(resolve, ms));
+
+// const getRandomNumber = () => {
+//   return new Promise((resolve, reject) => {
+//     delay(2000)
+//       .then(() => {
+//         const random = Math.random();
+//         console.log(random);
+//         if (random < 0.5) {
+//           resolve(random);
+//         } else {
+//           reject("An error has occurred");
+//         }
+//       })
+//       .catch((error) => {
+//         console.log(error);
+//       });
+//   });
+// };
+
+// getRandomNumber()
+//   .then((result) => {
+//     console.log(result);
+//     result = result * 10;
+//     return delay(1000).then(() => {
+//       console.log(result);
+//       result = result * 10;
+//       return delay(1000).then(() => {
+//         console.log(result);
+//       });
+//     });
+//   })
+//   .catch((error) => {
+//     console.log(error);
+//   });
+
+
+
+
+
+
+    </script>
+</body>
+</html>

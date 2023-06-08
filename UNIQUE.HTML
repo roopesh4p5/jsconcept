@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        //     let arr=["apple","ball","cat","dog","ball"];
+        //    console.log(arr);
+        //     let arr2= new Set(arr);
+        //     console.log(arr2);
+
+
+
+        // Write a function that takes an array of
+        //strings as input and returns the most common
+        // string(s) in the array. If there are multiple
+        // strings with the same highest frequency,
+        //return an array containing all of them.
+
+        //const strings = ["apple", "banana", "apple", "orange", "banana", "apple", "grape"];
+        // const mostCommon = findMostCommonStrings(strings);
+        // console.log(mostCommon); // Output: ["apple"]
+
+        let arr = ["apple", "ball", "cat", "dog", "ball", "cat", "cat", "egg"];
+        let frak = {};
+        arr2 = [];
+        for (let i = 0; i < arr.length; i++) {
+            if (frak[arr[i]]) {
+                frak[arr[i]]++;
+
+            }
+            else {
+                frak[arr[i]] = 1;
+                arr2.push(arr[i]);
+            }
+        }
+        console.log(frak);
+
+        let m = 0;
+        for (let k in frak) {
+            if (frak[k] > m) {
+                m = frak[k];
+            }
+        }
+        for (n in frak) {
+            let arr3 = {};
+            if (frak[n] == m) {
+                arr3 = `${n}:${frak[n]}`;
+                console.log(arr3);
+                console.log(n, frak[n]);
+            }
+        }
+
+
+
+
+
+
+    </script>
+</body>
+
+</html>
